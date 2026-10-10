@@ -1,0 +1,166 @@
+.artist-card {
+  background: var(--color-bg-card);
+  border: 1px solid rgba(139, 92, 246, 0.22);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: transform var(--transition-bounce), 
+              box-shadow var(--transition-bounce), 
+              border-color var(--transition-fast),
+              background var(--transition-fast);
+}
+
+.artist-card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-accent-purple);
+  box-shadow: var(--shadow-funky-purple);
+}
+
+.artist-card__media {
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 4 / 5;
+}
+
+.artist-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 5;
+}
+
+.artist-card__hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 11, 18, 0.88);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  z-index: 10;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.artist-card:hover .artist-card__hover-overlay {
+  opacity: 1;
+}
+
+.artist-card__details-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.artist-card__content {
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.artist-card__role {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  color: var(--color-accent-lime);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.artist-card__name {
+  font-size: 1.45rem;
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.artist-card__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.genre-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--border-radius-pill);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-text-secondary);
+}
+
+.artist-card__bio {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.artist-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.artist-card__socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.artist-card__socials a {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-text-muted);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.artist-card__socials a:hover {
+  color: var(--color-accent-lime);
+  background: rgba(198, 255, 61, 0.1);
+}
+
+.artist-card__more-btn {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  color: var(--color-accent-purple-light);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-transform: uppercase;
+}
+
+.artist-card__more-btn:hover {
+  color: var(--color-accent-lime);
+}

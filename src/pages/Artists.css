@@ -1,0 +1,108 @@
+.page-artists {
+  padding-bottom: var(--space-24);
+}
+
+.roster-callout {
+  background: var(--color-bg-card);
+  border: 1px solid rgba(198, 255, 61, 0.3);
+  border-radius: var(--border-radius-lg);
+  padding: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  box-shadow: var(--shadow-funky-lime);
+  flex-wrap: wrap;
+}
+
+.roster-callout__text {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.roster-callout__text h3 {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-top: 0.25rem;
+}
+
+.roster-callout__text p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Filter Bar */
+.artists-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.artists-genre-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.genre-filter-btn {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border-radius: var(--border-radius-pill);
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.genre-filter-btn:hover {
+  background: var(--color-bg-elevated);
+  color: #ffffff;
+  border-color: var(--color-accent-purple);
+}
+
+.genre-filter-btn--active {
+  background: var(--color-accent-purple);
+  color: #ffffff;
+  border-color: var(--color-accent-lime);
+  box-shadow: 2px 2px 0px var(--color-accent-lime);
+}
+
+.artists-count-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.artists-count-label strong {
+  color: var(--color-accent-lime);
+}
+
+/* Roster Grid */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .roster-callout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .artists-grid {
+    grid-template-columns: 1fr;
+  }
+}

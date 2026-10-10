@@ -1,0 +1,87 @@
+:root {
+  /* Colors - Professional Base */
+  --color-bg-primary: #0d0b12;
+  --color-bg-secondary: #14101c;
+  --color-bg-tertiary: #1b1626;
+  --color-bg-card: #181324;
+  --color-bg-card-hover: #221a33;
+  --color-bg-elevated: #261e38;
+
+  --color-text-primary: #f5f4f8;
+  --color-text-secondary: #aba5bf;
+  --color-text-muted: #746e8c;
+  --color-text-inverse: #0d0b12;
+
+  /* Funky Accents */
+  --color-accent-purple: #8b5cf6;
+  --color-accent-purple-light: #a78bfa;
+  --color-accent-purple-dark: #6d28d9;
+  --color-accent-purple-alpha: rgba(139, 92, 246, 0.15);
+
+  --color-accent-lime: #c6ff3d;
+  --color-accent-lime-dark: #a3db24;
+  --color-accent-lime-alpha: rgba(198, 255, 61, 0.12);
+
+  /* Borders */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+  --border-card: 1px solid rgba(139, 92, 246, 0.22);
+  --border-thick: 2px solid #8b5cf6;
+  --border-thick-lime: 2px solid #c6ff3d;
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-pill: 9999px;
+
+  /* Typography */
+  --font-display: 'Bricolage Grotesque', 'Unbounded', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Type Scale */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 2.75rem;   /* 44px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+  --font-size-hero: clamp(2.75rem, 8vw, 6.5rem);
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* Layout */
+  --max-width-content: 1240px;
+  --max-width-narrow: 840px;
+  --header-height: 80px;
+
+  /* Funky Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-funky-purple: 4px 4px 0px #8b5cf6;
+  --shadow-funky-lime: 4px 4px 0px #c6ff3d;
+  --shadow-funky-large: 6px 6px 0px #8b5cf6;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* Z-index layers */
+  --z-base: 1;
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-toast: 1100;
+}

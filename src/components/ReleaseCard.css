@@ -1,0 +1,147 @@
+.release-card {
+  background: var(--color-bg-card);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--border-radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-bounce), 
+              box-shadow var(--transition-bounce), 
+              border-color var(--transition-fast),
+              background var(--transition-fast);
+}
+
+.release-card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-accent-purple);
+  box-shadow: var(--shadow-funky-purple);
+}
+
+.release-card__media {
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.release-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 5;
+}
+
+.release-card__play-trigger {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius-pill);
+  background: var(--color-bg-primary);
+  color: var(--color-accent-lime);
+  border: 2px solid var(--color-accent-lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  transition: all var(--transition-fast);
+}
+
+.release-card__play-trigger:hover {
+  transform: scale(1.1);
+  background: var(--color-accent-lime);
+  color: var(--color-bg-primary);
+  box-shadow: 0 0 16px rgba(198, 255, 61, 0.4);
+}
+
+.release-card__play-trigger--active {
+  background: var(--color-accent-purple);
+  border-color: var(--color-accent-lime);
+  color: #ffffff;
+}
+
+.release-card__content {
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.release-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.05em;
+}
+
+.release-card__cat {
+  color: var(--color-accent-lime);
+  font-family: var(--font-display);
+}
+
+.release-card__bpm {
+  margin-left: auto;
+  color: var(--color-accent-purple-light);
+}
+
+.release-card__title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.release-card__artist {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.release-card__genre-tag {
+  margin-bottom: 1.25rem;
+}
+
+.release-card__genre-tag span {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-pill);
+  color: var(--color-text-secondary);
+}
+
+.release-card__links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.release-pill-link {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--border-radius-pill);
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.release-pill-link:hover {
+  background: var(--color-accent-purple);
+  color: #ffffff;
+  border-color: var(--color-accent-purple-light);
+  transform: translateY(-2px);
+}
